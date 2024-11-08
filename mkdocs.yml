@@ -1,0 +1,13 @@
+site_name: Houssame's personal site, portefolio, blog and notes
+
+site_url: https://hyahiaoui.github.io
+theme:
+  name: material
+
+plugins:
+  - search
+  - mermaid2
+  - minify_html
+  - git-revision-date-localized
+  
+
