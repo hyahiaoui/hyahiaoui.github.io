@@ -10,7 +10,7 @@ This project is managed using [poetry](https://python-poetry.org/). Install the 
 poetry install
 ```
 
-The site creation (an action done once) was done using
+The site creation (a one-shot action) was done using
 
 ```bash
 poetry run mkdocs new .
@@ -19,11 +19,23 @@ poetry run mkdocs new .
 To start the live-reloading docs server, run
 
 ```bash
-poetry run mkdocs serve
+make serve
 ```
 
 To build the documentation site, run
 
 ```bash
-poetry run mkdocs build
+make build
+```
+
+And to clean the built site, run
+
+```bash
+make clean
+```
+
+To create a new blog post, run (the `title` is mandatory)
+
+```bash
+make new-blog title="A new blog post"
 ```

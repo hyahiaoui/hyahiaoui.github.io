@@ -39,7 +39,7 @@ jobs:
 
       - name: Build static site
         run: |
-          poetry run mkdocs build
+          make build
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

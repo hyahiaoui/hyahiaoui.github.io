@@ -5,9 +5,20 @@ theme:
   name: material
 
 plugins:
-  - search
+  - blog:
+      enabled: true
+      archive: false    # https://squidfunk.github.io/mkdocs-material/plugins/blog/#archive
+      authors: false    # https://squidfunk.github.io/mkdocs-material/plugins/blog/#authors
+      categories: false # https://squidfunk.github.io/mkdocs-material/plugins/blog/#categories
+      pagination: false # https://squidfunk.github.io/mkdocs-material/plugins/blog/#pagination
+      blog_toc: false   # https://squidfunk.github.io/mkdocs-material/plugins/blog/#config.blog_toc
+  - git-revision-date-localized
   - mermaid2
   - minify_html
-  - git-revision-date-localized
-  
+  - search
 
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
